@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Quasar.Common.Cryptography;
 using Quasar.Common.Messages;
+using System;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using Quasar.Common.Cryptography;
 
 namespace Quasar.Server.Networking
 {
@@ -134,8 +134,6 @@ namespace Quasar.Server.Networking
             client.Value.AccountType = packet.AccountType;
             client.Value.Country = packet.Country;
             client.Value.CountryCode = packet.CountryCode;
-            client.Value.Region = packet.Region;
-            client.Value.City = packet.City;
             client.Value.Id = packet.Id;
             client.Value.Username = packet.Username;
             client.Value.PcName = packet.PcName;
